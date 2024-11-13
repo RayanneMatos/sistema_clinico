@@ -1,0 +1,124 @@
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url('../image/background-image.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; /* A imagem vai cobrir toda a área da tela */
+}
+
+/* Estilo da imagem de fundo */
+.parallax {
+    height: 100vh; /* Garantir que a altura ocupe toda a tela */
+    background-attachment: fixed; /* Fixa o fundo durante o scroll */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center; /* Alinha o conteúdo na horizontal */
+    align-items: center; /* Alinha o conteúdo na vertical */
+    text-align: center;
+}
+
+/* Cor do texto */
+.parallax h1, .parallax p {
+    color: #111;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra no texto para melhor visibilidade */
+}
+
+/* Botões */
+.parallax .btn {
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 12px 25px;
+    margin: 10px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.parallax .btn-primary {
+    background-color: #46D3B3; /* Cor vibrante */
+    color: white;
+    border: none;
+}
+
+.parallax .btn-primary:hover {
+    background-color: #38b18b; /* Tom mais escuro para hover */
+    transform: translateY(-5px); /* Efeito de elevação */
+}
+
+.parallax .btn-success {
+    background-color: #C7F3D8; /* Cor mais suave */
+    color: #333333;
+    border: none;
+}
+
+.parallax .btn-success:hover {
+    background-color: #A0D8B6;
+    transform: translateY(-5px);
+}
+
+.parallax .btn-secondary {
+    background-color: #E9FAF2; /* Cor suave */
+    color: #333333;
+    border: none;
+}
+
+.parallax .btn-secondary:hover {
+    background-color: #D4F1E8;
+    transform: translateY(-5px);
+}
+
+/* Estilos para garantir boa legibilidade */
+.container {
+    color: #ffffff; /* Cor do texto no container */
+    text-align: center;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .parallax .btn {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    .parallax h1 {
+        font-size: 2.5rem;
+    }
+
+    .parallax p {
+        font-size: 1rem;
+    }
+}
+
+/* menu */
+.navbar-custom {
+    background: linear-gradient(to right, #C6F4D8, #D5F6E5, #C9F3DF) !important; /* Efeito degradê */
+}
+
+.navbar-custom .nav-link {
+    color: #333333 !important; /* Cor do texto */
+}
+
+.navbar-custom .nav-link:hover {
+    color: #000000 !important; /* Cor ao passar o mouse sobre o texto */
+}
+
+.navbar-custom .navbar-brand {
+    color: #333333 !important; /* Cor da marca */
+}
+
+.navbar-custom .navbar-brand:hover {
+    color: #000000 !important; /* Cor ao passar o mouse sobre a marca */
+}
+
+.navbar-custom .dropdown-menu {
+    background: linear-gradient(to right, #C6F4D8, #D5F6E5, #C9F3DF) !important; /* Degradê no dropdown */
+}
+
+.navbar-custom .dropdown-item:hover {
+    background-color: #A8E4B4 !important; /* Cor ao passar o mouse sobre o item do dropdown */
+}
